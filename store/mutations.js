@@ -3,8 +3,52 @@ export default {
     request[attribute] = value
   },
 
+  setWebSocketState({ ws }, { attribute, value }) {
+    ws[attribute] = value
+  },
+
+  addWebSocketLog({ ws }, object) {
+    ws.log.push(object)
+  },
+
+  setEventSourceState({ eventSource }, { attribute, value }) {
+    eventSource[attribute] = value
+  },
+
+  addEventSourceLog({ eventSource }, object) {
+    eventSource.log.push(object)
+  },
+
+  setSocketIOState({ socketIO }, { attribute, value }) {
+    socketIO[attribute] = value
+  },
+
+  addSocketIOLog({ socketIO }, object) {
+    socketIO.log.push(object)
+  },
+
+  addSocketIOInputs({ socketIO }, str) {
+    socketIO.inputs.push(str)
+  },
+
+  removeFromSocketIOInputs({ socketIO }, index) {
+    socketIO.inputs.splice(index, 1)
+  },
+
+  setSocketIOInput({ socketIO }, { index, value }) {
+    socketIO.inputs[index] = value
+  },
+
   setGQLState({ gql }, { attribute, value }) {
     gql[attribute] = value
+  },
+
+  setMQTTState({ mqtt }, { attribute, value }) {
+    mqtt[attribute] = value
+  },
+
+  addMQTTLog({ mqtt }, object) {
+    mqtt.log.push(object)
   },
 
   setCollapsedSection({ theme }, value) {
