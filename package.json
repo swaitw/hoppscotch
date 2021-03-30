@@ -22,12 +22,6 @@
     "*.{js,vue}": "eslint",
     "*.{css,vue}": "stylelint"
   },
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": false,
-    "printWidth": 100
-  },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/gtm": "^2.4.0",
@@ -96,36 +90,5 @@
     "stylelint-config-standard": "^21.0.0",
     "vue-jest": "^3.0.7",
     "worker-loader": "^3.0.8"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "js",
-      "json",
-      "vue"
-    ],
-    "watchman": false,
-    "moduleNameMapper": {
-      ".+\\.(svg)\\?inline$": "<rootDir>/__mocks__/svgMock.js",
-      "^~/(.*)$": "<rootDir>/$1",
-      "^~~/(.*)$": "<rootDir>/$1"
-    },
-    "transform": {
-      "^.+\\.js$": "babel-jest",
-      ".*\\.(vue)$": "vue-jest"
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest.setup.js"
-    ],
-    "snapshotSerializers": [
-      "jest-serializer-vue"
-    ],
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "<rootDir>/components/**/*.vue",
-      "<rootDir>/pages/*.vue"
-    ],
-    "testURL": "http://localhost/",
-    "preset": "ts-jest/presets/js-with-babel"
   }
 }
