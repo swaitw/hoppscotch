@@ -103,6 +103,10 @@ export default {
   buildModules: [
     // https://github.com/nuxt-community/pwa-module
     "@nuxtjs/pwa",
+    // https://github.com/nuxt-community/eslint-module
+    "@nuxtjs/eslint-module",
+    // https://github.com/nuxt-community/stylelint-module
+    "@nuxtjs/stylelint-module",
     // https://github.com/nuxt-community/analytics-module
     "@nuxtjs/google-analytics",
     // https://github.com/nuxt-community/gtm-module
